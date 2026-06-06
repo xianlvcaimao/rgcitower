@@ -684,7 +684,7 @@ main.floors.sample2=
                 "false": [
                     {
                         "type": "changeFloor",
-                        "floorId": "InfUN",
+                        "floorId": "Infun",
                         "loc": [
                             6,
                             11
