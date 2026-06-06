@@ -545,7 +545,7 @@ var events_c12a15a8_c380_4b28_8144_256cba95f760 =
 								5
 							]
 						],
-						"floorId": "Start"
+						"floorId": "start"
 					},
 					{
 						"type": "setValue",
