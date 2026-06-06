@@ -1,6 +1,6 @@
-main.floors.infUN4=
+main.floors.infun4=
 {
-    "floorId": "infUN4",
+    "floorId": "infun4",
     "title": "无限宇宙",
     "name": "无限宇宙",
     "width": 13,
@@ -51,7 +51,7 @@ main.floors.infUN4=
     },
     "changeFloor": {
         "6,12": {
-            "floorId": "infUN2",
+            "floorId": "infun2",
             "loc": [
                 3,
                 2
