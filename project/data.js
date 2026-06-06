@@ -247,8 +247,8 @@ var data_a1e2fb4a_e986_4524_b0da_9b7ba7c0874d =
 			"startLogoStyle": "color: black",
 			"startButtonsStyle": "background-color: #32369F; opacity: 0.85; color: #FFFFFF; border: #FFFFFF 2px solid; caret-color: #FFD700;",
 			"statusLeftBackground": "url(project/materials/L.png) 0 0/100% 100% no-repeat",
-			"statusTopBackground": "url(project/materials/S.png) repeat",
-			"toolsBackground": "url(project/materials/X.png) repeat",
+			"statusTopBackground": "url(project/materials/s.png) repeat",
+			"toolsBackground": "url(project/materials/x.png) repeat",
 			"floorChangingStyle": "background-color: black; color: white",
 			"statusBarColor": [
 				255,
