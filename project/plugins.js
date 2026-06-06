@@ -1971,9 +1971,12 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		if (!window.core) return;
 		if (core.actions._checkReplaying && core.actions._checkReplaying()) return;
 		if (core.status.lockControl) return;
+if (core.hasFlag('bjpp')) { core.status.hero.mana += Math.floor(core.getFlag('zsjzy', 1))/100; }
+if (core.hasFlag('sjpp')) { core.status.hero.money += Math.floor(core.getFlag('zsjzy', 1))/20; }
 		if (core.hasFlag('gp')) { core.status.hero.money += Math.floor(core.getFlag('zczy', 1)); }
 		if (core.hasFlag('pp') && core.getFlag('jrsjtz3', 0) === 0) { core.status.hero.def += Math.floor(core.getFlag('zpzy', 1)) / 20; }
 		if (core.hasFlag('expp')) { core.status.hero.exp -= Math.floor(core.getFlag('zjyzy', 1)); }
+if (core.hasFlag('jcpp')) { core.setFlag('zjyzy',-Math.floor(core.getFlag('zjczy', 1))); }
 		core.updateStatusBar(true);
 	}, 50);
 },
@@ -2001,6 +2004,7 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 		if (core.status.lockControl) return;
 		var money = Math.max((core.status.hero && core.status.hero.money) || 0, 1);
 		var sw = Math.max((core.status.hero.def) || 0, 1);
+var sj = Math.max((core.status.hero.mdef) || 0, 1);
 		if (core.getFlag('zdgu2', 0) === 1) {
 			var gczy = Math.floor(Math.log10(money) / Math.log10(1.2));
 			core.setFlag('gczy', Math.max(gczy, 1));
@@ -2045,6 +2049,33 @@ var plugins_bb40132b_638b_4a9f_b028_d3fe47acc8d1 =
 			var pjczy = Math.floor(Math.log10(sw / 1000) / Math.log10(1.3));
 			core.setFlag('pjczy', Math.max(pjczy, 1));
 			core.setFlag('pu5c', Math.pow(1.3, pjczy + 1) * 1000);
+		}
+if (core.getFlag('zdsju1', 0) === 1) {
+			var sjczy = Math.floor(Math.log10(sj) / Math.log10(1.4));
+var sjjyzy = Math.floor(Math.log10(sj) / Math.log10(1.4));
+			core.setFlag('sjczy', Math.max(sjczy, 1));
+core.setFlag('sjjyzy', Math.max(sjjczy, 1));
+			core.setFlag('sju1c', Math.pow(1.4, sjczy + 1));
+		}
+if (core.getFlag('zdsju2', 0) === 1) {
+			var sjjczy = Math.floor(Math.log10(sj) / Math.log10(1.4));
+			core.setFlag('sjjczy', Math.max(sjjczy, 1));
+			core.setFlag('sju2c', Math.pow(1.4, sjjczy + 1));
+		}
+if (core.getFlag('zdsju3', 0) === 1) {
+			var sjpzy = Math.floor(Math.log10(sj/2) / Math.log10(1.8));
+			core.setFlag('sjpzy', Math.max(sjpzy, 1));
+			core.setFlag('sju3c', Math.pow(1.8, sjpzy + 1));
+		}
+if (core.getFlag('zdsju4', 0) === 1) {
+			var sjbjzy = Math.floor(Math.log10(sj/3) / Math.log10(1.8));
+			core.setFlag('sjbjzy', Math.max(sjbjzy, 1));
+			core.setFlag('sju4c', Math.pow(1.8, sjbjzy + 1));
+		}
+if (core.getFlag('zdsju5', 0) === 1) {
+			var sjsjzy = Math.floor(Math.log10(sj/5) / Math.log10(2));
+			core.setFlag('sjsjzy', Math.max(sjsjzy, 1));
+			core.setFlag('sju5c', Math.pow(2, sjsjzy + 1));
 		}
 		core.updateStatusBar(true);
 	}, 0.0000001);
