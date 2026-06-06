@@ -79,7 +79,7 @@ main.floors.inflevel=
     },
     "changeFloor": {
         "6,2": {
-            "floorId": "infUN2",
+            "floorId": "infun2",
             "loc": [
                 9,
                 4
